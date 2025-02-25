@@ -9,8 +9,14 @@ import { Component } from "@angular/core";
 export class MessageComponent {
   name = "Jéssica";
   isFinishedReading = false;
+  showFireworks = false;
 
-  handleFinishedReading() {
+  handleFinishedReading(): void {
     this.isFinishedReading = true;
+    this.showFireworks = true;
+
+    setTimeout(() => {
+      this.showFireworks = false;
+    }, 50000);
   }
 }
