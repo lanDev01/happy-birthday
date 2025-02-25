@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #D84040;
+  --color-secondary: #8E1616;
+  --color-background: #EEEFFF;
+  --color-text: #1D1616;
+  --color-light-text: #EEEFFF;
+  --font-family: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-secondary);
+  font-family: var(--font-family);
+  margin-bottom: 0.5em;
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--color-light-text);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-secondary);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: var(--color-primary);
+  color: var(--color-light-text);
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.footer {
+  background-color: var(--color-text);
+  color: var(--color-light-text);
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
