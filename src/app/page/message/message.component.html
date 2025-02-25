@@ -1,3 +1,4 @@
+@if (!isFinishedReading) {
 <div class="content">
   <h1 class="greeting">Feliz aniversário, {{ name }}!</h1>
   <p class="message">
@@ -10,4 +11,13 @@
     Meu maior desejo é que o nosso futuro seja cheio de felicidade, e que juntos possamos conquistar
     tudo o que sonhamos. Você merece o mundo, e estou ao seu lado para construir cada pedacinho dele!🌍
   </p>
+
+  <div class="button-wrapper">
+    <button (click)="handleFinishedReading()">Terminou de ler?</button>
+  </div>
 </div>
+} @else {
+<div class="content">
+  <h2 class="greeting-subtitle">Então nos vemos na sua próxima primavera🏵️</h2>
+</div>
+}

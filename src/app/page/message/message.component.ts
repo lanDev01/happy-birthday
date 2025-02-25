@@ -8,4 +8,9 @@ import { Component } from "@angular/core";
 })
 export class MessageComponent {
   name = "Jéssica";
+  isFinishedReading = false;
+
+  handleFinishedReading() {
+    this.isFinishedReading = true;
+  }
 }
