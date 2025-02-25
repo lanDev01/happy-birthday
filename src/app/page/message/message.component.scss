@@ -1,0 +1,46 @@
+:host {
+  height: 100dvh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 800px;
+  margin: 16px;
+  padding: 20px;
+  background-color: var(--color-background);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  color: var(--color-text);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.greeting {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: bold;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.message {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  text-align: justify;
+  color: var(--color-text);
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.message:last-child {
+  margin-bottom: 0;
+}
